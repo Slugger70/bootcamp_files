@@ -1,0 +1,55 @@
+Git setup:
+
+git config --global user.name "Simon Gladman"
+git config --global user.email "simon.gladman@monash.edu"
+git config --global color.ui "auto"
+git config --global core.editor "geany" 
+
+git config --global alias.st status 
+git config --global alias.ci commit 
+git config --global alias.co checkout 
+git config --global alias.hist 'log --graph --decorate --pretty=oneline --abbrev-commit'
+git config --global alias.ls 'log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit'
+git config --global alias.ll 'log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
+
+
+.gitignore example contents:
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+# etc etc
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
